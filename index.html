@@ -70,7 +70,7 @@
             
             const appsScriptBaseUrl = urlParams.get('script'); 
             const token = urlParams.get('token') || '';
-            const tag = urlParams.get('tag') || '';
+            //const tag = urlParams.get('tag') || '';
 
             // Helper function to render clean client-side errors
             function showError(title, message) {
@@ -97,7 +97,7 @@
                 
                 // Append payload arguments downstream
                 finalIframeUrl.searchParams.set('token', token);
-                finalIframeUrl.searchParams.set('tag', tag);
+                //finalIframeUrl.searchParams.set('tag', tag);
 
                 // 4. Construct and configure the nested frame environment
                 const iframe = document.createElement('iframe');
